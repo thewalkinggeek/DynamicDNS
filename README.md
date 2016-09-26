@@ -9,7 +9,7 @@ INSTALL
 
 CURRENTIP="/tmp/whatever.log"
 UPDATEURL="https://myprovider.com/update.php?myupdatekey=" 
-DNSLOG="/tmp/dynamicdns.log"                              
+DNSLOG="/tmp/DynamicDnsProvider.log"                              
 
 4) Create a Chronjob to run the script. (user@myunixbox:~ $ crontab -e)
 5) Add below line to the bottom of your chron file. (This will run the script every hour)
