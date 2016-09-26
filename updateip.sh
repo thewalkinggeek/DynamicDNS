@@ -2,8 +2,9 @@
 
 # You MUST EDIT these settings - Do not remove quotes #
 CURRENTIP="/tmp/whatever.log"                                 # Current IP log location (Logs current IP that is then compared to new IP )
-UPDATEURL="https://myprovider.com/update.php?myupdatekey="    # Update URL provided by Dynamic DNS Service Provider (Get URL from Dynamic DNS Provider)
 DNSLOG="/tmp/DynamicDnsProvider.log"                          # Dynamic DNS Log File (Logs IP Changes from Dyanmic DNS Provider)
+UPDATEURL="https://myprovider.com/update.php?myupdatekey="    # Update URL provided by Dynamic DNS Service Provider (Get URL from Dynamic DNS Provider)
+
 
 
 
