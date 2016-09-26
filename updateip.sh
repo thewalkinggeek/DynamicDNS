@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # You MUST EDIT these settings - Do not remove quotes #
-CURRENTIP="/tmp/whatever.log"                                 # Current IP log location (Logs current IP that is then compared to new IP )
+CURRENTIPLOG="/tmp/whatever.log"                                 # Current IP log location (Logs current IP that is then compared to new IP )
 DNSLOG="/tmp/DynamicDnsProvider.log"                          # Dynamic DNS Log File (Logs IP Changes from Dyanmic DNS Provider)
 UPDATEURL="https://myprovider.com/update.php?myupdatekey="    # Update URL provided by Dynamic DNS Service Provider (Get URL from Dynamic DNS Provider)
 
@@ -12,15 +12,15 @@ UPDATEURL="https://myprovider.com/update.php?myupdatekey="    # Update URL provi
 GETIPADDR="wget -qO- http://ipinfo.io/ip"
 
 #DO NOT EDIT #
-    if [ -f $CURRENTIP ]
+    if [ -f $CURRENTIPLOG ]
     then
-       if [ `cat $CURRENTIP` == `$GETIPADDR` ]
+       if [ `cat $CURRENTIPLOG` == `$GETIPADDR` ]
        then
            echo "No change in IP."
        else
-           $GETIPADDR > $CURRENTIP
+           $GETIPADDR > $CURRENTIPLOG
            wget --no-check-certificate -O - $UPDATEURL >> $DNSLOG 2>&1 &
         fi
     else
-        $GETIPADDR >> $CURRENTIP 
+        $GETIPADDR >> $CURRENTIPLOG 
     fi
