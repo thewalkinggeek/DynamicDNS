@@ -5,7 +5,7 @@ INSTALL
 
 1) Copy script to desired location.
 2) Open updateip.sh in desired editor.
-3) Edit log locations and Dynamic DNS Update URL (Get URL from Dynamic DNS Provider).
+3) Edit log locations and Dynamic DNS Update URL (Get URL from Dynamic DNS Provider and make sure to KEEP quotes).
 
 CURRENTIPLOG="/tmp/whatever.log"                                 
 DNSLOG="/tmp/DynamicDnsProvider.log"
