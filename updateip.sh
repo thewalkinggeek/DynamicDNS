@@ -12,6 +12,9 @@ UPDATEURL="https://myprovider.com/update.php?myupdatekey="    # Update URL provi
 GETIPADDR="wget -qO- http://ipinfo.io/ip"
 
 #DO NOT EDIT #
+if [ ! -e $CURRENTIPLOG ] ; then
+    touch $CURRENTIPLOG
+fi
     if [ -f $CURRENTIPLOG ]
     then
        if [ `cat $CURRENTIPLOG` == `$GETIPADDR` ]
