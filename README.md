@@ -7,9 +7,9 @@ INSTALL
 2) Open updateip.sh in desired editor.
 3) Edit log locations and Dynamic DNS Update URL
 
-CURRENTIP="/tmp/whatever.log"
-UPDATEURL="https://myprovider.com/update.php?myupdatekey=" 
-DNSLOG="/tmp/DynamicDnsProvider.log"                              
+CURRENTIPLOG="/tmp/whatever.log"                                 
+DNSLOG="/tmp/DynamicDnsProvider.log"
+UPDATEURL="https://myprovider.com/update.php?myupdatekey="                            
 
 4) Create a Chronjob to run the script. (user@myunixbox:~ $ crontab -e)
 5) Add the line below to the end of your chron file. (This will run the script every hour)
