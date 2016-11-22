@@ -18,6 +18,6 @@ UPDATEURL="https://myprovider.com/update.php?myupdatekey="
 
 6) Save.
 7) You can manually run the script once to get current IP. (user@myunixbox:~ $ /location/of/updateip.sh)
-9) Enjoy!  The script will now check if the IP has changed every hour. If it has it will update and log the change.
+8) Enjoy!  The script will now check if the IP has changed every hour. If it has it will update and log the change.
 
 
