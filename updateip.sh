@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Written by: Jon Schoenberger
+
 # You MUST EDIT these settings - Do not remove quotes #
 CURRENTIPLOG="/tmp/whatever.log"                              # Current IP log location (Logs current IP that is then compared to new IP )
 DNSLOG="/tmp/DynamicDnsProvider.log"                          # Dynamic DNS Log File (Logs IP Changes from Dyanmic DNS Provider)
